@@ -1,21 +1,23 @@
 #include "main.h"
 
 /**
- *puts2 - prints every character of a string
- *@str: A pointer to an int that will be changed
- *
- *Return: void which means it is correct
+ * puts_half - print second half of a string
+ * @str: char array string type
+ * Description: If odd number of chars, print (length - 1) / 2
  */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
-int a;
+	int i;
 
-for (a = 0; str[a] != '\0'; a++)
-{
-if (a % 2 == 0)
-_putchar (str[a]);
-}
+	for (i = 0; str[i] != '\0'; i++)
+		;
 
-_putchar ('\n');
+	i++;
+	for (i /= 2; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+
+	}
+	_putchar('\n');
 }
