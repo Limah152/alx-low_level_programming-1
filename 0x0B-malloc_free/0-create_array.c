@@ -5,7 +5,7 @@
  * @size: size of the array.
  * @c: storaged char
  *
- * return: pointer of an array of chars
+ * Return: pointer of an array of chars
  */
 char *create_array(unsigned int size, char c)
 {
